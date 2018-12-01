@@ -1,0 +1,9 @@
+- type: Email
+  username: bmrausch@ucdavis.edu
+  link: 'mailto:bmrausch@ucdavis.edu'
+- type: LinkedIn
+  username: Benjamin Rausch
+  link: 'https://linkedin.com/in/ben-rausch'
+- type: Github
+  username: libben
+  link: 'https://github.com/libben'

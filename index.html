@@ -1,12 +1,44 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Benjamin Rausch</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <p>Hi</p>
-    </body>
-</html>
+---
+title: Ben's Portfolio
+---
+<h2>Who am I?</h2>
+<p class="h5">I'm Ben Rausch. I write software. I began tinkering with HTML and CSS in Junior High and got hooked. Today, I'm the proud co-author of two enterprise Android applications.</p>
+<h2>Solo Projects</h2>
+<div class="card-deck">
+    {% for project in site.soloprojects %}
+        <a class="card m-card bg-success text-white" href="{{ project.link }}">
+            <img class="card-img-top m-card-image" src="{{ project.img }}" alt="{{ project.title }} image">
+            <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.content }}</p>
+            </div>
+        </a>
+    {% endfor %}
+</div>
+<h2>Collaborative Projects</h2>
+<div class="card-deck">
+    {% for project in site.collabprojects %}
+        <a class="card m-card bg-success text-white" href="{{ project.link }}">
+            <img class="card-img-top m-card-image" src="{{ project.img }}" alt="{{ project.title }} image">
+            <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.content }}</p>
+            </div>
+        </a>
+    {% endfor %}
+</div>
+<h2>Skills</h2>
+<ul class="list-group list-group-flush">
+    {% for skill in site.data.skills %}
+    <li class="list-group-item">{{ skill.name }}</li>
+    {% endfor %}
+</ul>
+<h2>Contact Me</h2>
+<table>
+{% for contact in site.data.contacts %}
+<tr>
+    <td><p class="h5 contact-type"><b>{{ contact.type }}:</b></p></td>
+    <td><p class="h5"><a href="{{ contact.link }}">{{ contact.username }}</a></p></td>
+</tr>
+{% endfor %}
+</table>
