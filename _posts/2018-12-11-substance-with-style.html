@@ -1,0 +1,175 @@
+---
+title: 'Substance with Style: Software Formatting Counts!'
+author: Benjamin Rausch
+---
+<h1>{{ page.title }}</h1>
+<h4>by {{ page.author }}</h4>
+<br>
+
+<figure class="figure m-figure">
+  <img src="/assets/images/paper.jpg" class="figure-img img-fluid m-figure-image" alt="Red pen and graded school paper">
+  <figcaption class="figure-caption">See me after class.<br><a href="https://pxhere.com/en/photo/1032524">This untitled image from pxhere</a> is licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC 0 1.0</a>.</figcaption>
+</figure>
+
+<h3>Back to English Class</h3>
+<p class="m-post-content">It’s a cheery morning in school, and your English teacher is passing back
+  your latest assignment after grading. You smile smugly, remembering how you worked long hours to
+  gather evidence to support your thesis. The smile drops as you receive your paper: in red pen at
+  the top of the first page is a large “C-”. Startled and upset, you wait till class ends and speak
+  with the teacher about your grade. He explains, “Your argument was good, but reading the paper
+  was a chore. You didn’t include headings to split up your paper’s sections — heck, the whole
+  paper was a single paragraph. On top of that, I’ve never seen citations like the ones you
+  provided. Even your line spacing was incorrect.” Now that he mentions it, you do remember that he
+  requested MLA standards for all classwork. Still, you’re bitter that so many points were removed
+  from your grade — it’s just a matter of style, isn’t it? Why does my paper’s style matter when
+  its argument is solid?
+  <br><br>
+  Believe it or not, this very question is a hot topic in software engineering. Style matters
+  to many software developers. The three most popular open-source (meaning “open to contributions
+  from the public”) software projects on GitHub, a major code storage website, are Visual Studio
+  Code, React Native, and TensorFlow; all three of these projects have a list of style rules – often
+  called a “style guide” – that new code must obey. Like your ugly essay, new code that isn’t
+  properly styled may be rejected by project leaders.
+</p>
+
+<figure class="figure m-figure">
+  <img src="https://imgs.xkcd.com/comics/code_quality.png" class="figure-img img-fluid m-figure-image" alt="xkcd comic 1513: Code Quality">
+  <figcaption class="figure-caption">The webcomic this comic strip belongs to, <a href="https://xkcd.com">xkcd</a>, is a pillar of contemporary programming culture.<br><a href="https://xkcd.com/1513/">Code Quality</a> by Randall Munroe is licensed under <a href="http://creativecommons.org/licenses/by-nc/2.5/">CC BY-NC 2.5</a>.</figcaption>
+</figure>
+
+<h3>Why Style Matters</h3>
+<p class="m-post-content">A <a href="#">new research study</a> published in <i>IEEE Transactions on
+  Software Engineering</i> this month suggests that enforcing style guides is more than just a way
+  to exert control over others. This study, which is from the University of California, Davis,
+  studied the effect that using a Python programming style guide had on programmers’ programming
+  speeds. The researchers learned that programmers fixed coding errors and added new features to
+  styled code about 10% faster than they did to unstyled code. Ben Rausch, lead researcher for the
+  study, asserted, “Our results for Python 3 and PEP 8  (the Python style guide used in the study)
+  have been promising: the productivity gains are substantial. We look forward to investigating
+  popular style guides for other languages.” So, your English teacher had a point! When there’s
+  structure to the content you’re reading, it’s easier to find what you’re looking for.
+</p>
+<h2>So What?</h2>
+<p class="m-post-content">At this point you’re wondering what this has to do with you. Well,
+  there’s more code in your life than you can imagine. When you browse the Internet, you are likely
+  using a <a href="https://www.openhub.net/p/chrome/analyses/latest/languages_summary">24</a> to
+  <a href="https://www.openhub.net/p/firefox/analyses/latest/languages_summary">37</a> million-line
+  web browser. When posting a Facebook status, you’re interacting with a
+  <a href="https://www.visualcapitalist.com/millions-lines-of-code/">61 million-line</a> program.
+  The “high-end” car you may be driving contains
+  <a href="https://www.visualcapitalist.com/millions-lines-of-code/">100 million lines</a> of code.
+  That’s about 80% as much information as
+  <a href="https://www.visualcapitalist.com/millions-lines-of-code/">a mouse’s genome</a> (which
+  means “an organism’s complete set of DNA” <a href="https://ghr.nlm.nih.gov/primer/hgp/genome">
+  according to NIH</a>). Can you remember the last day you didn’t use an electronic device?
+  Neither can I.
+  <br><br>
+	There’s a large volume of code behind some tools you use every day, and a hefty proportion of the
+  tools you use every day are backed by code. How programmers program influences the release dates
+  of new Google Docs features, when FortNite will publish its next game mode, and how quickly Apple
+  will patch
+  <a href="https://www.macrumors.com/2018/11/14/pwn2own-safari-iphone-exploit-discovered/">this</a>
+  bug that lets people steal your files over WiFi. So if you care about any of the preceding
+  things, read on.
+</p>
+
+<figure class="figure m-figure">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Programmer_writing_code_with_Unit_Tests.jpg" class="figure-img img-fluid m-figure-image" alt="Programmer writing Java code on a Mac">
+  <figcaption class="figure-caption">Programmer at work.<br><a href="https://commons.wikimedia.org/wiki/File:Programmer_writing_code_with_Unit_Tests.jpg">Programmer writing code with Unit Tests.jpg</a> by Joonspoon is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>.</figcaption>
+</figure>
+
+<h2>Inside the Office</h2>
+<p class="m-post-content">
+    Here’s one possible software development process. Jollycat Enterprises, a software company,
+    decides to bring a new product to market. The CEO has become fed up with poorly-designed
+    haircut scheduling websites and concludes that he and his team could craft a superior product.
+    So, he gives his employees a list of features that Jollycat Enterprises’ new product, HairNow,
+    needs to have and gives them a deadline for finishing. The employees split up the features into
+    tiny sections and start working, communicating often to stay on the same page, because they’re
+    all working on different parts of the same complex product.
+    <br><br>
+    “Why wouldn’t you let one person do it all, so this tricky collaboration doesn’t have to
+    happen?” you ask. Good question. It’s because solo work delays time-to-market, and the
+    sooner a product is released, the sooner it can profit its makers.
+    <br><br>
+    After each feature is written, extensive testing is done on it. If it doesn’t behave properly
+    (which is common), coders must scour the code to discover what was written incorrectly. This
+    process is called debugging. Eventually, after individual features and the whole product have
+    been diligently tested for misbehavior (or “bugs”), the product is released into the wild. Yay!
+    People start using it. Yay! Then they start complaining that your software isn’t working
+    correctly. Oh no! And then they complain that your software doesn’t have a feature they want.
+    Double “Oh no!” While some programmers move on to other projects within Jollycat Enterprises
+    after launch, others remain assigned to maintain and improve HairNow. The ones remaining on the
+    project must seek out bugs in published software, send bug fixes to customers, and implement
+    requested features.
+    <br><br>
+    Software is often maintained, or provided bug fixes by product creators, for a long time; the
+    Windows XP operating system, for example, was maintained for
+    <a href="https://support.microsoft.com/en-us/help/14223/windows-xp-end-of-support">12 years.</a>
+    <br><br>
+    Suppose that it’s been 5 years since HairNow came out and you’re the only original developer
+    still working on the project. Your boss grumbles that customers are experiencing problems with
+    the Customer Analytics subsystem and orders you to root out the problem. In compliance, you
+    open the code files for that subsystem. Unfortunately, they weren’t written by you, so their
+    formatting doesn’t match your personal style. Commands are ordered strangely, variable and
+    function names are unhelpful, and there are no comments (think of comments as code footnotes)
+    to explain how the code was designed to behave. You painstakingly search through the subsystem
+    for hours until you finally make a change that seems to eliminate the problem.
+    <br><br>
+    You have a headache and don’t want to see another line of code for the rest of the day. (Note:
+    even if you did write this subsystem for the first product launch, by now chances are 99% that
+    your personal style has changed and it looks foreign to you too). Now imagine that this whole
+    process happens again and again, which it does. That’s hellish, right? That’s where style
+    guides can assist.
+    <br><br>
+    Most programming languages allow programmers to write really ugly code if they want to. To
+    counter that, we have style guides. Style guides are lists of rules which attempt to rein
+    ugliness in and make formatting consistent; that way, other people (and future you) can read
+    and understand your code. For instance, it’s a pain to read code that spills outside of the
+    edge of your screen (e.g. a line that’s over 100 characters long). A style guide’s solution to
+    this issue may be to instruct programmers not to have any lines of code longer than 100
+    characters.
+</p>
+<h2>Wasn't This Blog About Research?</h2>
+<p class="m-post-content">
+    Back to the study. People have been enforcing style guides for coding projects for a while, but only with this new research using the Python programming language and its Python Enhancement Protocol (PEP) 8 style guide do we know that style guides can be helpful.
+    <br><br>
+    The researchers who conducted the study tested whether PEP 8 affected how quickly programmers could write new programs, fix bugs, and improve programs. Their experiment involved recruiting programmers and splitting them into two groups: style-guide-having and style-guide-lacking. Each member of each group completed three small coding challenges. The style-guide-having group used only PEP 8-styled code, and the style-guide-lacking group used code which lacked any style guide. Each programmer’s speed at each task was measured and compared to the speed of other programmers.
+    <br><br>
+    The style-guide-using programmers spent 18% more time on average writing new programs. I find
+    this reasonable; following extra rules ought to require more diligence. However, the
+    researchers also discovered that bug-fixing and program-improving speed was about 10% faster
+    with PEP 8 than without. So, this style guide (and hopefully others too) is serving its purpose
+    of making code more understandable more quickly. Even though writing new programs is slower,
+    the PEP 8 style guide’s description retorts,
+    “<a href="https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds">code is read much more often than it is written.</a>”
+    Assuming that’s the case, the benefits of PEP 8 could outweigh the drawbacks. They certainly
+    outweigh the drawbacks for a software project like FortNite, where feature-adding happens with
+    high frequency.
+    <br><br>
+    Where will this study lead to? Lead researcher Rausch confessed, “If we can obtain funding, our desire is to examine a Java style guide next. We anticipate that researching another language’s style guide will allow us to make insightful comparisons with our Python research.”
+    <br><br>
+    We also have more precise insights because the researchers surveyed participants on such attributes as overall programming skill, Python skill, and English reading and writing skill. Because programming ability was surveyed, the researchers discovered that both high- and low-skill programmers benefitted from using PEP 8 to debug and add features. That means the benefits apply to novices as well as experts, which is great news. Hopefully, computer science education will incorporate style guides and begin to teach students good formatting (I have taken four college-level programming classes and have never been shown a style guide).
+    <br><br>
+    Now a couple cautionary details: programmers with low Python familiarity or low written English familiarity didn’t see any benefits from using PEP 8. The first might be because people who are barely familiar with Python’s rules aren’t ready to internalize new rules. As for the second: maybe the challenges of translating English instructions into code and reading English documentation bogged down the programming process; with the process bogged down, perhaps quick analyses of PEP 8 codebases were impossible. These results reveal a potential opportunity for companies who outsource software work overseas: more English training might result in faster coding among teams which use style guides.
+</p>
+<h2>The Takeaway</h2>
+<p class="m-post-content">
+  Style guides are a promising method for increasing programming speed. The easier it is for developers to add features and fix bugs, the faster they will be able to pass updates along to customers and the faster they will be able to move on to new projects. At the end of it all, you benefit from their speed increases. So, from all of us users of technology: thanks, style guides!
+  <br><br>
+  <i class="m-gray">Benjamin Rausch is a student in the University of California, Davis' Bachelor
+    of Computer Science program. His areas of interest include software engineering and artificial
+    intelligence.</i>
+</p>
+<h4>Previous posts by this author:</h4>
+<ul class="list-group list-group-flush m-list-group">
+  <li class="list-group-item"><a href="#">Are Asimov's Laws Programmable?</a></li>
+  <li class="list-group-item"><a href="#">AI Can Improve Your Smart Home</a></li>
+  <li class="list-group-item"><a href="#">Why Do Many Programmers Learn to Code Outside of School?</a></li>
+</ul>
+
+<!--<figure class="figure m-figure">
+  <img src="" class="figure-img img-fluid m-figure-image" alt="">
+  <figcaption class="figure-caption"><br><a href=""></a> by  is licensed under <a href="">CC </a>.</figcaption>
+</figure>
+-->

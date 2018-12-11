@@ -1,8 +1,11 @@
 $primary_color: #920000;
 
-h2 {
-    padding-top: 20px;
-    padding-bottom: 10px;
+h1, h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h3 {
+  padding-top: 20px;
 }
 p.h5 {
     padding-bottom: 8px;
@@ -21,6 +24,31 @@ p.h5 {
 
 #author-name {
     font-family: 'Pacifico', cursive;
-    font-size: 2em;
+    font-size: 2.1em;
     margin-right: 25px;
+}
+
+.m-figure-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.m-figure {
+  display: block;
+}
+
+.m-post-content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2em;
+}
+
+.m-list-group {
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+.m-gray {
+  color: #999999;
 }
